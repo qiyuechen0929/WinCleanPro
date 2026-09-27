@@ -1,5 +1,10 @@
 # 🛠 WinCleanPro
 
+![banner](banner.svg)
+
+![Platform](https://img.shields.io/badge/Platform-Windows%2010/11-0078D6) ![PowerShell](https://img.shields.io/badge/PowerShell-Single%20File-5391FE) ![Safety](https://img.shields.io/badge/Safety-可回滚-green) ![License](https://img.shields.io/badge/License-MIT-green)
+
+
 > Windows 全家桶一键清理优化工具 · 纯 PowerShell 脚本 · 双击即用 · 安全可回滚
 
 作者：陈启粤 · 最后更新：2026-08-06
@@ -21,6 +26,17 @@ WinCleanPro 是一个**零依赖、单文件、双击即用**的 Windows 清理�
 > 与市面上「永久删除、不可撤销」的工具不同，WinCleanPro 以安全为先：所有删除操作都走回收站，注册表改动全部可还原。
 
 ---
+
+## 🧹 清理流程
+
+```mermaid
+flowchart TD
+    A[🔍 全盘扫描] --> B[📊 前后对比统计]
+    B --> C[🧹 清理执行 · 所有删除先进回收站]
+    C --> D[💾 注册表改动自动备份]
+    D --> E[❤️ 健康评分 + HTML 报告]
+    E --> F[↩️ 随时一键回滚]
+```
 
 ## 🖥 界面预览
 
